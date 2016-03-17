@@ -7,14 +7,14 @@ import javafx.scene.Scene;
 public class BeanGame extends Application  {
 	@Override
 	public void start(Stage primaryStage) {
-		Pane a=new Pane();
+		Pane a=new Pane();//先給一個版版
 		
-		Line x1=new Line();
-		x1.setStartX(150.0f);
-		x1.setStartY(0.0f);
-		x1.setEndX(150.0f);
-		x1.setEndY(50.0f);
-		Line x2=new Line();
+		Line x1=new Line();//開始畫線
+		x1.setStartX(150.0f);//起始X位置
+		x1.setStartY(0.0f);//起始Y位置
+		x1.setEndX(150.0f);//結束X位置
+		x1.setEndY(50.0f);//結束Y位置
+		Line x2=new Line();//以此類推吧....
 		x2.setStartX(250.0f);
 		x2.setStartY(0.0f);
 		x2.setEndX(250.0f);
@@ -81,12 +81,12 @@ public class BeanGame extends Application  {
 		x14.setEndY(500.0f);
 		
 		
-		Circle y1=new Circle();
-		y1.setStyle("-fx-fill:DODGERBLUE;");
-		y1.setCenterX(50.0f);
-		y1.setCenterY(400.0f);
-		y1.setRadius(12.0f);
-		Circle y2=new Circle();
+		Circle y1=new Circle();//開始畫圈圈(先到牆角!?)
+		y1.setStyle("-fx-fill:DODGERBLUE;");//可愛的藍藍球
+		y1.setCenterX(50.0f);//中心位置的X軸
+		y1.setCenterY(400.0f);//中心位置的Y軸
+		y1.setRadius(12.0f);//半徑12
+		Circle y2=new Circle();//以此類推......
 		y2.setStyle("-fx-fill:DODGERBLUE;");
 		y2.setCenterX(100.0f);
 		y2.setCenterY(400.0f);
@@ -224,10 +224,10 @@ public class BeanGame extends Application  {
 		
 		
 		a.getChildren().addAll(x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,
-y1,y2,y3,y4,y5,y6,y7,y8,y9,y10,y11,y12,y13,y14,y15,y16,y17,y18,y19,y20,y21,y22,y23,y24,y25,y26,y27,y28);
-		Scene scene = new Scene(a, 400, 500);
+y1,y2,y3,y4,y5,y6,y7,y8,y9,y10,y11,y12,y13,y14,y15,y16,y17,y18,y19,y20,y21,y22,y23,y24,y25,y26,y27,y28);//把剛剛的線線和圈圈都加到版版裡
+		Scene scene = new Scene(a, 400, 500);//包裝好丟上舞台瞜
 		primaryStage.setScene(scene);
-		primaryStage.show();
+		primaryStage.show();//演員出場啦
 	}
 	public static void main(String[] args) {
 		launch(args);
